@@ -4,7 +4,8 @@
 }
 body{
     color: white;
-    background-color: rgb(21, 43, 79);;
+    background-color: rgb(21, 43, 79);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .nav{
     padding-right: 60%;
@@ -28,7 +29,7 @@ body{
     text-decoration: none;
 }   
 .nav a:hover{
-    color: aqua;
+    color: rgb(21, 43, 79);
     border-radius: 20px;
 }
 .About{
@@ -75,19 +76,27 @@ body{
     background-color: rgb(69, 126, 205);
     border-radius: 20px;
     color: rgb(232, 226, 226);
+    box-shadow: 0px 0px 2px 0px rgb(38, 38, 38);
 }
-.content button hover{
+.content button:hover{
     background-color: white;
-    color: rgb(69, 126, 205);
+    color: rgb(13, 67, 144);
+    transition: 0.7s;
 }
+
 .hero{
-    padding: 30px;
-    margin: 20px;
+    padding: 20px;
+    margin-top: 80px;
     border: 2;
-    border-image: round;
+    border-radius: 80%;
+    height: 75%;
+    background-color: rgb(13, 67, 144);
+    
 }
 #rcorners1 {
-  border-radius: 100px;
-  background: rgb(13, 67, 144);
-  padding: 10px;
+    height: 75%;
+  border-radius: 80%;
+  background-color: white;
+  padding: 15px;
+   
 }
