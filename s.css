@@ -23,7 +23,7 @@ body{
 }
 .container{
     display: flex;
-    flex-direction:row
+    flex-direction:column
 }
 h2,p,img,h5{
     padding: 20px;

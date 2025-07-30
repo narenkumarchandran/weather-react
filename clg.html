@@ -10,11 +10,11 @@
     <div class="navbar">
             <div class="left">
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Projects</a>
-            <a href="#">Signup</a>
-            <a href="#">Login</a>
+            <a href="#" onclick="myFunction('.content-right')">About</a>
+            <a href="#" onclick="myFunction('.bottom')">Contact</a>
+            <a href="#" onclick="myFunction('.content-left')">Projects</a>
+            <a href="#"  onclick="myFunction('.signup')">Signup</a>
+            <a href="#" onclick="myFunction('.login')">Login</a>
             </div>
         </div>
     <div class="container">
@@ -26,6 +26,8 @@
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quis incidunt enim non alias, accusamus fugiat minima ipsam facilis est nesciunt vero sit rerum recusandae, voluptatibus eius. Ipsum, iusto aspernatur.</p>
             <h2>More text</h2>
+        </div>
+        <div class="bottom">
             <div class="image">
                 <p>image</p>
             </div>
@@ -49,6 +51,27 @@
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quis incidunt enim non alias, accusamus fugiat minima ipsam facilis est nesciunt vero sit rerum recusandae, voluptatibus eius. Ipsum, iusto aspernatur.</p>
         </div>
+        <div class="signup">
+            <h3>Signup</h3>
+        </div>
+        <div class="login">
+            <h3>login</h3>
+        </div>
     </div>
 </body>
 </html>
+
+<script>
+    function myFunction(target){
+        var section=document.querySelectorAll('.container >div');
+        for(let i=0;i<section.length;i++){
+            if(!section[i].matches(target)){
+                section[i].style.display="None";
+            }
+            else{
+                section[i].style.display="block";
+            }
+
+        }
+    }
+</script>
