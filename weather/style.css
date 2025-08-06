@@ -1,0 +1,99 @@
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px 0;
+}
+
+.search input {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+.search button {
+    padding: 12px 20px;
+    background-color: #0d4390;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search button:hover {
+    background-color: #0b356e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e3f2fd;
+}
+
+.weather-app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+  width: 30%;
+  background-color:#0d4390;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 30px 30px 0;
+}
+
+.sidebar h2 {
+  font-size: 2rem;
+}
+
+.temp h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.sun-time p {
+  font-size: 1rem;
+}
+
+.main-panel {
+  flex: 1;
+  padding: 40px;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
